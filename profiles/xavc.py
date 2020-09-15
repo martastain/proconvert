@@ -8,6 +8,6 @@ XAVC
 """
 
 
-class XAVC(EncoderProfile):
+class XAVC(EncoderFormat):
     name = "XAVC"
 

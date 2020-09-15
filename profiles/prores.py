@@ -5,6 +5,6 @@ Apple ProRes
 ============
 """
 
-class PRORES(EncoderProfile):
+class PRORES(EncoderFormat):
     name = "Apple Prores"
 

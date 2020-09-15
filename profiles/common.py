@@ -4,12 +4,16 @@ FPS_30="30000/1001"
 FPS_50="50"
 FPS_60="60000/1001"
 
-class EncoderProfile():
+class EncoderFormat():
     name = "(untitled)"
     profiles = {}
 
-    def __init__(self, *args, **kwargs):
-        pass
+    def __init__(self, profile, *args, **kwargs):
+        self.profile = self.profiles[profile]
+
+    def build(self):
+        cmd = self.video(**self.profile)
+        return cmd
 
     def vfilters(self, **kwargs):
         return []

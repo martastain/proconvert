@@ -33,6 +33,6 @@ VC3_444             any     any     progressive         RGB 4:4:4       Avid DNx
 
 """
 
-class DNXHD(EncoderProfile):
+class DNXHD(EncoderFormat):
     name = "DNxHD"
 
